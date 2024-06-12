@@ -1,0 +1,147 @@
+/* *************PARAMETRE GENERAUX************* */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", serif;
+  font-weight: normal;
+}
+li {
+  list-style: none;
+}
+body {
+  background: rgb(48, 45, 45);
+  color: whitesmoke;
+  min-height: 100vh;
+}
+
+/* *****************NAV*************************** */
+
+h2 {
+  font-size: 2em;
+  font-size: bold;
+}
+nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px 20px;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+/* ************HEADER*********************** */
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 30px auto;
+}
+.hd-left {
+  margin: 60px 20px;
+}
+h1 {
+  font-size: 5rem;
+}
+.hd-left h3 {
+  color: #474dff;
+  font-size: 1.8rem;
+}
+.header-right {
+  display: grid;
+  width: 100%;
+}
+#main-right {
+  width: 100%;
+  margin: 20px auto;
+}
+
+/* ***********INFOS******************** */
+.infos {
+  display: grid;
+  grid-template-columns: 33% 67%;
+  background: rgb(10, 10, 10);
+  border-radius: 10px;
+
+}
+.button-left button {
+  border: none;
+  background: #474dff;
+  color: whitesmoke;
+  border-radius: 10px;
+  width: 150px;
+  padding: 10px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 5px;
+  display: block; /*pour les remettre en colonnes*/
+}
+
+.logos-right {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 50px 20px 10px;
+
+}
+#logo {
+  height: 50px;
+}
+
+/* ***********RESPONSIVE********************** */
+
+@media screen and (max-width: 870px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .hd-left h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  .hd-left h3 {
+   font-size: 0.9rem; 
+  }
+  .infos h3 {
+    font-size: 1rem;
+  }
+  .button-left button  {
+    font-size: 0.7rem;
+
+  }
+  #logo {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+ .infos {
+  display: block;
+  text-align: center;
+
+  }
+  .infos h3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logos-right {
+    margin:  20px 20px 0 30px;
+    display: block;
+    text-align: center;
+  }
+  #logo {
+    display: block;
+      height: 20px ;
+  }
+}
